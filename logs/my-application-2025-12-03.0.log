@@ -1,0 +1,9 @@
+2025-12-03 23:52:55.106 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 3128 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-03 23:52:55.109 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-03 23:52:55.110 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-03 23:52:56.087 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-03 23:52:56.161 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1003 ms
+2025-12-03 23:52:56.695 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-03 23:52:56.701 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 2.053 seconds (process running for 2.925)
+2025-12-03 23:53:03.300 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-03 23:53:03.671 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete

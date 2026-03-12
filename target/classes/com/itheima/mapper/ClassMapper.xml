@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itheima.mapper.ClassMapper">
+
+    <resultMap id="ClazzResultMap" type="com.itheima.pojo.Clazz">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="room" column="room"/>
+        <result property="beginDate" column="begin_date"/>
+        <result property="endDate" column="end_date"/>
+        <result property="masterId" column="master_id"/>
+        <result property="masterName" column="master_name"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="status" column="status"/>
+    </resultMap>
+    <insert id="saveClass">
+        <!-- 保存班级 --> INSERT INTO clazz (
+        name,
+        room,
+        begin_date,
+        end_date,
+        master_id,
+        subject,  <!-- 添加这个字段 -->
+        create_time,
+        update_time
+        ) VALUES (
+        #{name},
+        #{room},
+        #{beginDate},
+        #{endDate},
+        #{masterId},
+        #{subject},  <!-- 添加这个参数 -->
+        #{createTime},
+        #{updateTime}
+        )
+        </insert>
+    <update id="update">
+        UPDATE clazz
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="room != null and room != ''">
+                room = #{room},
+            </if>
+            <if test="beginDate != null">
+                begin_date = #{beginDate},
+            </if>
+            <if test="endDate != null">
+                end_date = #{endDate},
+            </if>
+            <if test="masterId != null">
+                master_id = #{masterId},
+            </if>
+            <if test="subject != null">
+                subject = #{subject},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="masterName != null and masterName != ''">
+                master_name = #{masterName},
+            </if>
+            <if test="status != null and status != ''">
+                status = #{status},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+
+    <!-- 查询班级列表 -->
+    <select id="list" resultMap="ClazzResultMap">
+        SELECT
+        c.id,
+        c.name,
+        c.room,
+        c.begin_date,
+        c.end_date,
+        c.master_id,
+        c.create_time,
+        c.update_time,
+        e.name as master_name
+        FROM clazz c
+        LEFT JOIN emp e ON c.master_id = e.id
+        <where>
+            <!-- 注意：这里要用 begin，不是 beginDate -->
+            <!-- 注意：这里要用 end，不是 endDate -->
+
+            <!-- 班级名称模糊查询 -->
+            <if test="name != null and name != ''">
+                AND c.name LIKE CONCAT('%', #{name}, '%')
+            </if>
+
+            <!-- 结课时间范围查询（根据文档要求） -->
+            <if test="begin != null and begin != ''">
+                AND c.end_date >= #{begin}
+            </if>
+            <if test="end != null and end != ''">
+                AND c.end_date &lt;= #{end}
+            </if>
+
+            <!-- 如果你需要开课时间范围查询，需要添加属性 -->
+            <!--
+            <if test="beginDate != null and beginDate != ''">
+                AND c.begin_date >= #{beginDate}
+            </if>
+            <if test="endDate != null and endDate != ''">
+                AND c.begin_date &lt;= #{endDate}
+            </if>
+            -->
+        </where>
+        ORDER BY c.create_time DESC
+    </select>
+    <select id="getByClassId" resultType="com.itheima.pojo.Clazz">
+        select *from clazz where id=#{id}
+    </select>
+    <select id="getAllClass" resultType="com.itheima.pojo.Clazz">
+        SELECT * FROM clazz
+    </select>
+</mapper>

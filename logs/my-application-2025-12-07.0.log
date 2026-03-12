@@ -1,0 +1,114 @@
+2025-12-07 11:18:18.388 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 35500 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 11:18:18.391 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 11:18:18.393 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 11:18:19.280 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 11:18:19.347 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 912 ms
+2025-12-07 11:18:19.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 11:18:19.965 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.967 seconds (process running for 2.845)
+2025-12-07 11:18:21.319 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 11:18:22.045 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 18:05:18.907 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 12732 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 18:05:18.910 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 18:05:18.910 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:05:19.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 18:05:20.063 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1113 ms
+2025-12-07 18:05:20.890 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 18:05:20.899 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 2.418 seconds (process running for 3.446)
+2025-12-07 18:05:58.886 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:05:58.887 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 18:05:58.933 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController - 分页查询,EmpQueryParam(page=null, pageSize=null, name=null, gender=null, begin=null, end=null)
+2025-12-07 18:08:35.973 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController - 分页查询,EmpQueryParam(page=null, pageSize=null, name=null, gender=null, begin=null, end=null)
+2025-12-07 18:13:39.640 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 18:13:40.352 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 18:13:48.047 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 10756 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 18:13:48.049 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 18:13:48.050 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:13:49.082 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 18:13:49.146 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1053 ms
+2025-12-07 18:13:49.710 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 18:13:49.717 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 2.089 seconds (process running for 2.871)
+2025-12-07 18:13:56.535 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:13:56.536 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 18:13:56.577 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController - 分页查询,EmpQueryParam(page=null, pageSize=null, name=null, gender=null, begin=null, end=null)
+2025-12-07 18:16:43.127 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController - get emp:59
+2025-12-07 18:17:18.126 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController - get emp:37
+2025-12-07 18:17:56.952 [http-nio-8080-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "id"]
+2025-12-07 18:18:35.377 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController - 分页查询,EmpQueryParam(page=null, pageSize=null, name=null, gender=null, begin=null, end=null)
+2025-12-07 18:18:40.575 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 18:18:41.275 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 18:19:29.363 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 34324 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 18:19:29.365 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 18:19:29.365 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:19:30.098 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 18:19:30.154 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 755 ms
+2025-12-07 18:19:30.659 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 18:19:30.665 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.637 seconds (process running for 2.274)
+2025-12-07 18:19:33.192 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:19:33.194 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-07 18:19:33.225 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController - get emp:1
+2025-12-07 18:20:53.877 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 18:20:54.583 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 18:20:57.894 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 5920 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 18:20:57.895 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 18:20:57.896 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:20:58.589 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 18:20:58.644 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 716 ms
+2025-12-07 18:20:59.180 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 18:20:59.187 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.626 seconds (process running for 2.268)
+2025-12-07 18:21:03.032 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:21:03.033 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 18:21:03.065 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController - get emp:1
+2025-12-07 18:22:13.556 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController - get emp:37
+2025-12-07 18:22:29.769 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController - get emp:37
+2025-12-07 18:22:55.475 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 18:22:56.186 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 18:37:04.986 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 8980 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 18:37:04.988 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 18:37:04.988 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:37:05.811 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 18:37:05.875 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 851 ms
+2025-12-07 18:37:06.461 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 18:37:06.467 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.899 seconds (process running for 2.721)
+2025-12-07 18:37:12.884 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:37:12.885 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-07 18:37:12.921 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController - get emp:37
+2025-12-07 18:37:22.110 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 18:37:22.858 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 20:14:32.596 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 4152 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 20:14:32.597 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 20:14:32.598 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 20:14:33.353 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 20:14:33.412 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 778 ms
+2025-12-07 20:14:33.930 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 20:14:33.935 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.69 seconds (process running for 2.344)
+2025-12-07 20:16:03.574 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 20:16:03.579 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-12-07 20:16:03.709 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2025-06-11 12:52:37": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2025-06-11 12:52:37' could not be parsed at index 10]
+2025-12-07 20:17:44.605 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 20:17:45.294 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 20:17:49.663 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 24096 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 20:17:49.664 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 20:17:49.665 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 20:17:50.371 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 20:17:50.425 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 728 ms
+2025-12-07 20:17:50.927 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 20:17:50.932 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.599 seconds (process running for 2.222)
+2025-12-07 20:18:02.265 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 20:18:02.266 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 20:18:02.364 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2025-09-30": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2025-09-30' could not be parsed at index 10]
+2025-12-07 20:20:25.198 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController - update emp:Emp(id=1, username=hy_001, password=123456, name=宦海燕, gender=1, phone=null, job=2, salary=8000, image=https://loremflickr.com/400/400?lock=6661086276717217, entryDate=2024-04-30, deptId=4, createTime=2024-06-11T12:52:37, updateTime=2024-09-30T10:30, deptName=null, exprList=[EmpExpr(id=1, empId=1, begin=2020-02-03, end=2023-11-08, company=阿里巴巴, job=Java开发工程师), EmpExpr(id=2, empId=1, begin=2023-12-01, end=2024-04-30, company=腾讯科技, job=高级开发工程师)])
+2025-12-07 20:22:00.191 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController - update emp:Emp(id=1, username=hy_001, password=123456, name=宦海燕, gender=1, phone=1231423423, job=2, salary=8000, image=https://loremflickr.com/400/400?lock=6661086276717217, entryDate=2024-04-30, deptId=4, createTime=2024-06-11T12:52:37, updateTime=2024-09-30T10:30, deptName=null, exprList=[EmpExpr(id=1, empId=1, begin=2020-02-03, end=2023-11-08, company=阿里巴巴, job=Java开发工程师), EmpExpr(id=2, empId=1, begin=2023-12-01, end=2024-04-30, company=腾讯科技, job=高级开发工程师)])
+2025-12-07 20:22:30.151 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 20:22:30.900 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-07 20:30:04.497 [main] INFO  com.itheima.WebAiProjectApplication - Starting WebAiProjectApplication using Java 17.0.10 with PID 16224 (D:\web-ai-project\target\classes started by 浮沉洛水 in D:\web-ai-project)
+2025-12-07 20:30:04.499 [main] DEBUG com.itheima.WebAiProjectApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-12-07 20:30:04.499 [main] INFO  com.itheima.WebAiProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 20:30:05.236 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-07 20:30:05.294 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
+2025-12-07 20:30:05.811 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-07 20:30:05.817 [main] INFO  com.itheima.WebAiProjectApplication - Started WebAiProjectApplication in 1.664 seconds (process running for 2.355)
+2025-12-07 20:30:24.830 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 20:30:24.831 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 20:30:24.918 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController - update emp:Emp(id=1, username=liuchang01, password=123456, name=宦海燕, gender=1, phone=1231423423, job=2, salary=8000, image=https://loremflickr.com/400/400?lock=6661086276717217, entryDate=2024-04-30, deptId=4, createTime=2024-06-11T12:52:37, updateTime=2024-09-30T10:30, deptName=null, exprList=[EmpExpr(id=1, empId=1, begin=2020-02-03, end=2023-11-08, company=阿里巴巴, job=Java开发工程师), EmpExpr(id=2, empId=1, begin=2023-12-01, end=2024-04-30, company=腾讯科技, job=高级开发工程师)])
+2025-12-07 20:30:42.645 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-07 20:30:43.359 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete

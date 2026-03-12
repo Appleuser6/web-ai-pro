@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.StudentMapper">
+    <insert id="add" parameterType="com.itheima.pojo.Student" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO student
+        (name, no, gender, phone, degree, clazz_id,
+        <if test="idCard != null and idCard != ''">id_card,</if>
+        <if test="isCollege != null">is_college,</if>
+        <if test="address != null and address != ''">address,</if>
+        <if test="graduationDate != null">graduation_date,</if>
+        create_time, update_time)
+        VALUES
+        (#{name}, #{no}, #{gender}, #{phone}, #{degree}, #{clazzId},
+        <if test="idCard != null and idCard != ''">#{idCard},</if>
+        <if test="isCollege != null">#{isCollege},</if>
+        <if test="address != null and address != ''">#{address},</if>
+        <if test="graduationDate != null">#{graduationDate},</if>
+        #{createTime},
+         #{updateTime})
+    </insert>
+    <update id="updateStu">
+        UPDATE student
+        <set>
+            <!-- 基本字段 -->
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="no != null and no != ''">
+                no = #{no},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+
+            <!-- 学历相关信息 -->
+            <if test="degree != null">
+                degree = #{degree},
+            </if>
+            <if test="graduationDate != null">
+                graduation_date = #{graduationDate},
+            </if>
+            <if test="isCollege != null">
+                is_college = #{isCollege},
+            </if>
+
+            <!-- 身份信息 -->
+            <if test="idCard != null and idCard != ''">
+                id_card = #{idCard},
+            </if>
+
+            <!-- 班级信息 -->
+            <if test="clazzId != null">
+                clazz_id = #{clazzId},
+            </if>
+
+            <!-- 联系信息 -->
+            <if test="address != null">
+                address = #{address},
+            </if>
+
+            <!-- 违纪信息 -->
+            <if test="violationCount != null">
+                violation_count = #{violationCount},
+            </if>
+            <if test="violationScore != null">
+                violation_score = #{violationScore},
+            </if>
+
+            <!-- 更新时间（自动更新） -->
+            update_time = #{updateTime}
+        </set>
+        WHERE id = #{id}
+    </update>
+    <update id="setViolationScore">
+            UPDATE student
+            SET violation_count = violation_count + 1,
+                violation_score = violation_score + #{score},
+                update_time = NOW()
+            WHERE id = #{id}
+    </update>
+    <delete id="deleteStudent">
+        DELETE FROM student
+        WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="getByPage" resultType="com.itheima.pojo.Student">
+        SELECT *
+        FROM student
+        <where>
+            <if test="name != null and name != ''">
+                AND name LIKE CONCAT('%', #{name}, '%')
+            </if>
+
+            <if test="degree != null">
+                AND degree = #{degree}
+            </if>
+
+            <if test="clazzId != null">
+                AND clazz_id = #{clazzId}
+            </if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+    <select id="getByid" resultType="com.itheima.pojo.Student">
+        select *from  student where id =#{id}
+    </select>
+    <select id="countStudentsGroupByClass" resultType="java.util.Map">
+        SELECT
+            c.name AS className,
+            COUNT(s.id) AS studentCount
+        FROM student s
+                 LEFT JOIN clazz c ON s.clazz_id = c.id
+        GROUP BY s.clazz_id
+        ORDER BY studentCount
+    </select>
+    <select id="countStudentsGroupByDegree" resultType="java.util.Map">
+        SELECT
+            degree,
+            COUNT(*) AS count
+        FROM student
+        WHERE degree IS NOT NULL
+        GROUP BY degree
+        ORDER BY degree
+    </select>
+</mapper>
